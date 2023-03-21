@@ -131,6 +131,9 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
+const newFeature = function () {
+  console.log(`Добро пожаловать`);
+};
 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -140,6 +143,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView._addHandlerClick(controlPagenation);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Добро пожаловать');
+  newFeature();
 };
 init();
